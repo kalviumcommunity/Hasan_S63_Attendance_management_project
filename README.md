@@ -45,5 +45,5 @@ This is a 10-part code-along project to build a console-based school attendance 
 
 ### How to Run
 1. Navigate to the project root directory.
-2. Compile: `javac src/com/school/*.java` (or list individual files including `AttendanceRecord.java`)
+2. Compile: `javac src/com/school/*.java`
 3. Run: `java -cp src com.school.Main`

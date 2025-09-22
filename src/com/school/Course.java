@@ -14,13 +14,11 @@ public class Course {
         return courseId;
     }
 
-    public String getTitle() {
+    public String getCourseName() {
         return courseName;
     }
 
     public void displayDetails() {
         System.out.println("Course ID: C" + courseId + ", Title: " + courseName);
     }
-
-    // Remove setDetails method if present
 }
