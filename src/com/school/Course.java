@@ -1,17 +1,26 @@
 package com.school;
 
 public class Course {
-    private String title;
+    private static int nextCourseIdCounter = 101;
+    private int courseId;
+    private String courseName;
 
-    public Course() {
-        this.title = "Untitled Course";
+    public Course(String courseName) {
+        this.courseId = nextCourseIdCounter++;
+        this.courseName = courseName;
     }
 
-    public Course(String title) {
-        this.title = title;
+    public int getCourseId() {
+        return courseId;
     }
 
     public String getTitle() {
-        return title;
+        return courseName;
     }
+
+    public void displayDetails() {
+        System.out.println("Course ID: C" + courseId + ", Title: " + courseName);
+    }
+
+    // Remove setDetails method if present
 }
